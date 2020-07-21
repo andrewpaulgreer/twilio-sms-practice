@@ -6,7 +6,7 @@ const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 
 client.messages.create({
-    to: '8287738001',
+    to: 'INSERT # Here',
     from: '+1 866 939 1612',
     body: "testing for twillio message"
 }).then((message)=> console.log(message))
